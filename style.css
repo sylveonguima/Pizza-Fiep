@@ -200,3 +200,75 @@ body{
 }
 
 /* GRID */
+.lista{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.lista ul{
+    list-style: none;
+}
+
+/* itens */
+.lista ul::before{
+    content: attr(data-title);
+    display: block;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* itens */
+.lista li{
+    margin: 6px 0;
+    font-weight: 15px;
+    position: relative;
+    padding-left: 15px;
+}
+
+/* Bolinha igual do figma */
+.lista li::before{
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #000;
+}
+
+.contato{
+    background-color: #fff;
+}
+
+.contato h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color: #000;
+}
+
+.conteudo{
+    background-color: #145a32;
+}
+
+.contato iframe{
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.conteudo img{
+    width: 400px;
+    height: 250px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
